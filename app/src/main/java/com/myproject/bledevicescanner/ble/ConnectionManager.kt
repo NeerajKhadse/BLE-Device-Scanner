@@ -218,7 +218,6 @@ object ConnectionManager {
                 signalEndOfOperation()
                 return
             }
-        
         when (operation) {
             is Disconnect -> with(operation) {
                 Timber.w("Disconnecting from ${device.address}")
